@@ -1,5 +1,5 @@
 import React from 'react';
-import config from './../config'; // Correct path to config
+import config from '../config'; // Correct path to config
 import { ConfigType, SVGMProps } from '../types/types'; // Correct path to types
 import { importAll } from '../utils/svgUtils'; // Correct path to utilities
 import { renderIcon } from '../utils/IconRenderer'; // Correct path to utilities

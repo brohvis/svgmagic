@@ -1,32 +1,33 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
-  entry: './src/index.js', // Adjust if your entry file differs
+  entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'svgm.js',
+    library: 'SVGM',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
       {
-        test: /\.svg$/,
-        use: ['@svgr/webpack'] // This will handle your SVG files
-      },
-      {
-        test: /\.jsx?$/,
+        test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-react'] // Preset for React applications
+            loader: 'babel-loader'
           }
-        }
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack']
       }
     ]
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html' // Path to a template file
-    })
-  ]
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js', '.jsx']
+  },
+  externals: {
+    react: 'react', // Avoid bundling React, expect it to be available in consumer's environment
+    'react-dom': 'react-dom'
+  }
 };
