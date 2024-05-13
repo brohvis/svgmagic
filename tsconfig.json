@@ -9,7 +9,7 @@
       "strict": true,
       "typeRoots": ["./node_modules/@types", "./types"],      // Enables strict type-checking options
     },
-    "include": ["src/**/*", "webpack-env.d.ts"],  // Source files location
+    "include": ["src/**/*"],  // Source files location
     "exclude": ["node_modules", "dist"] // Excludes directories from compilation
   }
   
