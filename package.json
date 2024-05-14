@@ -1,5 +1,5 @@
 {
-  "name": "svgm",
+  "name": "svgmagic",
   "version": "1.0.0",
   "description": "SVGMagic, dynamic SVG loader with theme support for utility classes called in just one little line..",
   "scripts": {
@@ -11,7 +11,8 @@
     "svg",
     "svgm",
     "tailwindsvg",
-    "nextsvg"
+    "nextsvg",
+    "svgmagic"
   ],
   "author": "brohvis",
   "license": "ISC",
