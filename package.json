@@ -1,11 +1,12 @@
 {
   "name": "svgmagic",
-  "version": "1.0.0",
-  "description": "SVGMagic, dynamic SVG loader with theme support for utility classes called in just one little line..",
+  "version": "1.0.1",
+  "description": "SVGMagic, dynamic SVG loader with theme support for utility classes called in just one little line.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && npm run copy-assets",
-    "copy-assets": "cp -R src/svg dist/svg"
+    "copy-assets": "cp -R src/svg dist/svg",
+    "release": "npm version patch && git push --follow-tags && npm publish"
   },
   "keywords": [
     "svg",
@@ -15,7 +16,7 @@
     "svgmagic"
   ],
   "author": "brohvis",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.12.11",
     "@types/react": "^18",
@@ -35,5 +36,9 @@
   "dependencies": {
     "fs-extra": "^11.2.0",
     "inquirer": "^9.2.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brohvis/svgmagic.git"
   }
 }
