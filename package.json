@@ -1,6 +1,6 @@
 {
   "name": "svgmagic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SVGMagic, dynamic SVG loader with theme support for utility classes called in just one little line.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
