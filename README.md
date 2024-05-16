@@ -1,6 +1,13 @@
 
 # svgMagic
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/brohvis/svgmagic/publish.yml?style=for-the-badge)
+![GitHub Release](https://img.shields.io/github/v/release/brohvis/svgmagic?style=for-the-badge&logo=GitHub&label=LATEST&color=success)
+![NPM Version](https://img.shields.io/npm/v/svgmagic?style=for-the-badge&logo=npm&logoColor=white&color=success)
+![NPM Downloads](https://img.shields.io/npm/dw/svgmagic?style=for-the-badge)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/svgmagic?style=for-the-badge)
+
+
 svgMagic, SVGMAGIC, svgm, or SVGM is a dynamic `svg` management package designed for Next.js applications. It allows developers and designers to easily load and manage `svg`'s, making them instantly available in the development environment without manual imports or pre-specifications.
 
 Visit our website for more in depth documentation and example animations at https://svgmagic.dev
@@ -145,14 +152,14 @@ For more information, and a detailed demonstration and documentation using Next.
 
 ---
 
-### Release Notes for v1.1.6
+### Release Notes for v1.1
 
-**Title:** SVGM v1.1.6 - Latest Release
+**Title:** SVGM v1.1 - Latest Release
 
 **Tags:** svg, svgm, tailwindsvg, nextsvg, svgmagic
 
 **Release Notes:**
-- README.md enhancements.
+- README.md enhancements
 
 Thank you for using SVGM! We look forward to your feedback and contributions.
 https://svgmagic.dev
