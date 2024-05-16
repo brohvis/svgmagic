@@ -69,9 +69,9 @@ To use SVGM in your Next.js project, follow these next steps:
    ```
 
    This script will:
-   - Create an `svgm` directory under `src`.
-   - Copy sample `.svg`'s into this directory (optional).
-   - Create the `SVGM.tsx` component file.
+   - Create a default or configurable `svgm` directory under `src`.
+   - Optionally copy sample `.svg`'s into this directory.
+   - Create the `SVGM.tsx` component file in this directory.
 
    **Note:** This setup is required because `require.context` is a webpack feature not available to npm packages. Once locally scaffolded, it works like a charm!
 
@@ -92,11 +92,9 @@ To use SVGM in your Next.js project, follow these next steps:
 
 ### Changing the Default Path and Installing Sample svg's
 
-During setup, you can choose whether to install sample `.svg`'s and change the default path for the `svgm` directory. The sample SVGs are sourced from company websites and are up-to-date as of May 15, 2024.
+During setup, you can choose whether to install sample `.svg`'s and change the default path for the `svgm` directory. The sample `.svg`'s are sourced from company websites and are up-to-date as of May 15, 2024.
 
-To change the default path or skip installing sample `.svg`'s
-
-### Adding SVGM to MDX Components
+### Adding SVGM to MDX
 
 To use SVGM with MDX components in a setup like Contentlayer, update your `mdx-components.js` file:
 
@@ -112,10 +110,10 @@ const components = {
 export default components;
 ```
 
-### Adding New SVGs
+### Adding New svg's
 
 1. **Naming Convention:**
-   - Place your SVG files in the `/svgm` directory.
+   - Place your `.svg` files in the `/svgm` directory.
    - Use concise and descriptive filenames. The name of the `.svg` file will be used to call the `svg` code in your components.
 
 2. **Replace Fill Colors:**
@@ -147,9 +145,9 @@ For more information, and a detailed demonstration and documentation using Next.
 
 ---
 
-### Release Notes for v1.1.5
+### Release Notes for v1.1.6
 
-**Title:** SVGM v1.1.5 - Latest Release
+**Title:** SVGM v1.1.6 - Latest Release
 
 **Tags:** svg, svgm, tailwindsvg, nextsvg, svgmagic
 
