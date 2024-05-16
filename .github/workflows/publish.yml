@@ -10,10 +10,10 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: '16'
         registry-url: 'https://registry.npmjs.org'
@@ -29,8 +29,17 @@ jobs:
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-    - name: Publish to GitHub Packages
+    - name: Change package name for GitHub Packages
       run: |
-        npm publish --registry=https://npm.pkg.github.com --tag latest
+        PACKAGE_NAME=$(jq -r ".name" package.json)
+        jq ".name = \"@brohvis/$PACKAGE_NAME\"" package.json > temp.json && mv temp.json package.json
+
+    - name: Publish to GitHub Packages
+      run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Restore original package name
+      run: |
+        PACKAGE_NAME=$(jq -r ".name" package.json)
+        jq ".name = \"$PACKAGE_NAME\"" package.json > temp.json && mv temp.json package.json
