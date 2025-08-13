@@ -162,4 +162,4 @@ For more information, and a detailed demonstration and documentation using Next.
 - README.md enhancements
 
 Thank you for using SVGM! We look forward to your feedback and contributions.
-https://svgmagic.dev
+https://svgmagic.org
