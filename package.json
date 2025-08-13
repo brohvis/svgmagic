@@ -37,7 +37,7 @@
     "fs-extra": "^11.2.0",
     "inquirer": "^9.2.21"
   },
-  "homepage": "https://svgmagic.dev",
+  "homepage": "https://svgmagic.org",
   "repository": {
     "type": "git",
     "url": "https://github.com/brohvis/svgmagic.git"

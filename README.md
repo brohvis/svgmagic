@@ -10,7 +10,7 @@
 
 svgMagic, SVGMAGIC, svgm, or SVGM is a dynamic `svg` management package designed for Next.js applications. It allows developers and designers to easily load and manage `svg`'s, making them instantly available in the development environment without manual imports or pre-specifications.
 
-Visit our website for more in depth documentation and example animations at https://svgmagic.dev
+Visit our website for more in depth documentation and example animations at https://svgmagic.org
 
 ## Features
 
@@ -148,7 +148,7 @@ SVGM is licensed under the MIT License.
 
 ## Visit Us
 
-For more information, and a detailed demonstration and documentation using Next.js, visit [SVG Magic](https://svgmagic.dev).
+For more information, and a detailed demonstration and documentation using Next.js, visit [SVG Magic](https://svgmagic.org).
 
 ---
 
@@ -162,4 +162,4 @@ For more information, and a detailed demonstration and documentation using Next.
 - README.md enhancements
 
 Thank you for using SVGM! We look forward to your feedback and contributions.
-https://svgmagic.dev
+https://svgmagic.org
